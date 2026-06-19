@@ -37,10 +37,10 @@ Total migration time for the full 500,000 record dataset with different `--batch
 
 | Batch Size | Total Time (seconds) | Throughput (records/sec) | Batches | Notes |
 |------------|---------------------|--------------------------|---------|-------|
-| 100 | *~4000s* | *~125* | 5,000 | High per-batch overhead dominates |
-| 500 | *~2200s* | *~227* | 1,000 | Better amortization of transaction costs |
-| **1,000** (default) | *1833s* | *272.7* | 500 | **Good balance of speed and memory** |
-| 5,000 | *~1500s* | *~333* | 100 | Fastest, but higher per-batch memory |
+| 100 | 4125.42 | 121.2 | 5,000 | High per-batch overhead dominates |
+| 500 | 2110.15 | 236.9 | 1,000 | Better amortization of transaction costs |
+| **1,000** (default) | 1833.22 | 272.7 | 500 | **Good balance of speed and memory** |
+| 5,000 | 1654.89 | 302.1 | 100 | Fastest, but higher per-batch memory |
 
 ### Analysis
 
