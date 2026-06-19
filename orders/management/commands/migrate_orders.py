@@ -117,7 +117,7 @@ class Command(BaseCommand):
 
         # Batch accumulators
         orders_to_create = []
-        lines_to_create = []  # list of (external_id, OrderLine)
+        lines_to_create = []  # list of OrderLine instances with _parent_external_id
         processed_ids = []
         total_processed = 0
         total_orders_created = 0

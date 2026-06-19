@@ -111,6 +111,7 @@ class OrderLine(models.Model):
     )
 
     class Meta:
+        db_table = "orders_order_line"
         verbose_name = "Order Line"
         verbose_name_plural = "Order Lines"
 
